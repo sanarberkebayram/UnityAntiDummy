@@ -1,6 +1,6 @@
 {
   "name": "UnityAntiDummy.Editor",
-  "rootNamespace": "Project.EditorTools",
+  "rootNamespace": "UnityAntiDummy.EditorTools",
   "references": [],
   "includePlatforms": [
     "Editor"
@@ -14,4 +14,3 @@
   "versionDefines": [],
   "noEngineReferences": false
 }
-

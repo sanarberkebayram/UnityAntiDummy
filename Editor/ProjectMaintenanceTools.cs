@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Project.EditorTools
+namespace UnityAntiDummy.EditorTools
 {
     public static class ProjectMaintenanceTools
     {
@@ -16,22 +16,38 @@ namespace Project.EditorTools
         [MenuItem("Tools/Project/Maintenance/Reimport Naming Tools", priority = 1)]
         public static void ReimportNamingTools()
         {
-            var paths = new List<string>
+            // Reimport all MonoScripts in the same Editor folder as this tool,
+            // which works both when used from Assets or from a UPM package.
+            var editorFolder = GetThisEditorFolder();
+            if (!string.IsNullOrEmpty(editorFolder))
             {
-                "Assets/_Project/Scripts/Editor/NamingConventionsWindow.cs",
-                "Assets/_Project/Scripts/Editor/NamingConventionsUtil.cs",
-                "Assets/_Project/Scripts/Editor/NamingConventionsRenamerWindow.cs",
-                "Assets/_Project/Scripts/Editor/NamingConventionsImportPostprocessor.cs"
-            };
-
-            foreach (var p in paths)
-            {
-                AssetDatabase.ImportAsset(p, ImportAssetOptions.ForceUpdate);
+                var guids = AssetDatabase.FindAssets("t:MonoScript", new[] { editorFolder });
+                foreach (var guid in guids)
+                {
+                    var path = AssetDatabase.GUIDToAssetPath(guid);
+                    AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+                }
+                AssetDatabase.SaveAssets();
+                EditorUtility.DisplayDialog("Reimport", "Naming tools reimported.", "OK");
             }
+            else
+            {
+                EditorUtility.DisplayDialog("Reimport", "Could not locate the package's Editor folder.", "OK");
+            }
+        }
 
-            AssetDatabase.SaveAssets();
-            EditorUtility.DisplayDialog("Reimport", "Naming tools reimported.", "OK");
+        private static string GetThisEditorFolder()
+        {
+            var guids = AssetDatabase.FindAssets("t:MonoScript ProjectMaintenanceTools");
+            foreach (var guid in guids)
+            {
+                var scriptPath = AssetDatabase.GUIDToAssetPath(guid);
+                if (scriptPath.EndsWith("ProjectMaintenanceTools.cs"))
+                {
+                    return System.IO.Path.GetDirectoryName(scriptPath)?.Replace('\\', '/');
+                }
+            }
+            return null;
         }
     }
 }
-

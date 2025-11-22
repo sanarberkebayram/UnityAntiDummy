@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Project.EditorTools
+namespace UnityAntiDummy.EditorTools
 {
     public class NamingConventionsImportPostprocessor : AssetPostprocessor
     {
@@ -60,4 +60,3 @@ namespace Project.EditorTools
         }
     }
 }
-

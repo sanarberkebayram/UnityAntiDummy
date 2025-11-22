@@ -1,6 +1,6 @@
 {
   "name": "UnityAntiDummy.Runtime",
-  "rootNamespace": "Project",
+  "rootNamespace": "UnityAntiDummy",
   "references": [],
   "includePlatforms": [],
   "excludePlatforms": [],
@@ -12,4 +12,3 @@
   "versionDefines": [],
   "noEngineReferences": false
 }
-

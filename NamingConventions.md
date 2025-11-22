@@ -44,10 +44,9 @@ Use lowercase prefixes to quickly identify asset types. Optional descriptive suf
 - Fonts/TMP: fnt_<Name> (e.g., fnt_Roboto)
 
 Folder Hints
-- Place ScriptableObjects in `_Project/ScriptableObjects/<Domain>`.
-- Place UI sprites in `_Project/UI/Sprites` with `spr_` prefix.
+- Place ScriptableObjects in `Assets/UnityAntiDummy/ScriptableObjects/<Domain>`.
+- Place UI sprites in `Assets/UnityAntiDummy/UI/Sprites` with `spr_` prefix.
 - Keep per-feature assets grouped; avoid duplicating materials/textures.
 
 Validation
 - Use the in-Editor window: Tools > Project > Naming Conventions to view rules and validate the current selection.
-

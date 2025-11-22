@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
-namespace Project.EditorTools
+namespace UnityAntiDummy.EditorTools
 {
     public class NamingConventionsWindow : EditorWindow
     {

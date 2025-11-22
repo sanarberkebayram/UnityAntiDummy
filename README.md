@@ -38,6 +38,8 @@ Editor-only utilities to enforce naming conventions and simplify project mainten
 
 Suggestions are auto-generated from the current name (e.g., `MyButton` → `spr_MyButton`).
 
+For the complete and up-to-date rules, see [NamingConventions.md](./NamingConventions.md).
+
 ## Files of Interest
 
 - `Editor/NamingConventionsImportPostprocessor.cs`: Validates imported assets and queues issues for review.
@@ -56,6 +58,7 @@ This package includes an Editor-only assembly definition so scripts compile insi
 
 - This package is Editor-only; it contains no Runtime scripts.
 - If you change naming rules, update `Editor/NamingConventionsUtil.cs`.
+- `.editorconfig` is included at the package root to keep code style consistent across editors (Rider/VS Code/Visual Studio). Ensure your IDE has EditorConfig support enabled.
 
 ## License
 

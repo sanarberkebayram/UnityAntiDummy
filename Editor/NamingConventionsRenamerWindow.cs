@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Project.EditorTools
+namespace UnityAntiDummy.EditorTools
 {
     [Serializable]
     internal class NamingIssue

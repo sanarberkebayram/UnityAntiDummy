@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
-namespace Project.EditorTools
+namespace UnityAntiDummy.EditorTools
 {
     internal static class NamingConventionsUtil
     {
@@ -179,4 +179,3 @@ namespace Project.EditorTools
         }
     }
 }
-
