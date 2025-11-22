@@ -7,7 +7,7 @@ Editor-only utilities to enforce naming conventions and simplify project mainten
 - Open `Window > Package Manager`.
 - Click the `+` button → `Add package from Git URL…`.
 - Enter your repo URL, for example:
-  `https://github.com/your-org/UnityAntiDummy.git#main`
+  `https://github.com/sanarberkebayram/UnityAntiDummy.git#main`
 
 > Requires Unity 6000.2.9f1 or newer (Unity 6).
 
