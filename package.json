@@ -1,0 +1,22 @@
+{
+  "name": "com.sanarberkebayram.unityantidummy",
+  "displayName": "Unity Anti Dummy (Editor Tools)",
+  "version": "0.1.0",
+  "unity": "6000.2",
+  "unityRelease": "9f1",
+  "description": "Editor-only naming convention tools and maintenance utilities. Validates asset names on import and provides rename suggestions.",
+  "keywords": [
+    "editor",
+    "tools",
+    "naming",
+    "conventions",
+    "import",
+    "maintenance"
+  ],
+  "author": {
+    "name": "Sanar Berke Bayram"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "hideInEditor": false
+}
+

@@ -1,0 +1,6 @@
+# Ignore Unity .meta files in this repo
+*.meta
+
+# macOS
+.DS_Store
+
