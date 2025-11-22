@@ -1,5 +1,5 @@
 {
-  "name": "UnityAntiDummy",
+  "name": "com.sanarberkebayram.unityantidummy",
   "displayName": "Unity Anti Dummy (Editor Tools)",
   "version": "0.1.0",
   "unity": "6000.2",
@@ -19,4 +19,3 @@
   "license": "SEE LICENSE IN LICENSE",
   "hideInEditor": false
 }
-
