@@ -1,5 +1,4 @@
-# Ignore Unity .meta files in this repo
-
 # macOS
 .DS_Store
 
+# UPM note: Unity .meta files must be committed.
