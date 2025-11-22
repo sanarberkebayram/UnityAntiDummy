@@ -9,7 +9,7 @@ Editor-only utilities to enforce naming conventions and simplify project mainten
 - Enter repo URL:
   `https://github.com/sanarberkebayram/UnityAntiDummy.git#main`
 
-> Requires Unity 6000.2.9f1 or newer (Unity 6).
+> Requires Unity 2022.3 or newer.
 
 ## What’s Inside
 
