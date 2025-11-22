@@ -1,7 +1,7 @@
 {
   "name": "com.sanarberkebayram.unityantidummy",
   "displayName": "Unity Anti Dummy (Editor Tools)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "unity": "2022.3",
   "description": "Editor-only naming convention tools and maintenance utilities. Validates asset names on import and provides rename suggestions.",
   "keywords": [
